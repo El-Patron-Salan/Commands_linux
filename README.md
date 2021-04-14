@@ -16,3 +16,7 @@ lsb_release -a
 ```
 echo "smth_to_translate" | tr '[A-Za-z]' '[N-ZA-Mn-za-m]'
 ```
+> Test C code with many warnings enabled
+```
+gcc -std=c17 -Wall -Wextra -Wwrite-strings -Wno-parentheses -Wpedantic -Warray-bounds  -Wstrict-prototypes -Wconversion
+```
