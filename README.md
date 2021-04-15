@@ -20,3 +20,7 @@ echo "smth_to_translate" | tr '[A-Za-z]' '[N-ZA-Mn-za-m]'
 ```
 gcc -std=c17 -Wall -Wextra -Wwrite-strings -Wno-parentheses -Wpedantic -Warray-bounds  -Wstrict-prototypes -Wconversion
 ```
+> Show running process of files in range (TCP:1-1024)
+```
+lsof -i TCP:1-1024
+```
