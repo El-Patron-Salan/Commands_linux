@@ -24,3 +24,18 @@ gcc -std=c17 -Wall -Wextra -Wwrite-strings -Wno-parentheses -Wpedantic -Warray-b
 ```
 lsof -i TCP:1-1024
 ```
+> Show all groups
+```
+getent group
+```
+> Show groups that specific user belongs to
+```
+getent group | grep user_name | awk -F: '{ print $1 }'
+```
+```
+grep user_name /etc/group | awk -F: '{ print $1 }'
+```
+> Get all sudo or super users
+```
+grep '^sudo:.*$' /etc/group | cut -d: -f4
+```
