@@ -39,3 +39,41 @@ grep user_name /etc/group | awk -F: '{ print $1 }'
 ```
 grep '^sudo:.*$' /etc/group | cut -d: -f4
 ```
+<details>
+  <summary>Just in case Ubuntu crashed</summary>
+ 
+  ## step by step  
+  ```
+  sudo rm /var/lib/apt/lists/lock
+  ```
+  ```
+  sudo rm /var/lib/dpkg/lock
+  ```
+  ```
+  sudo rm /var/lib/dpkg/lock-frontend
+  ```
+  ```
+  sudo dpkg --configure -a
+  ```
+  ```
+  sudo apt clean
+  ```
+  ```
+  sudo apt update --fix-missing
+  ```
+  ```
+  sudo apt install -f
+  ```
+  ```
+  sudo dpkg --configure -a
+  ```
+  ```
+  sudo apt upgrade
+  ```
+  ```
+  sudo apt dist-upgrade
+  ```
+  ```
+  sudo reboot
+  ```
+</details>
