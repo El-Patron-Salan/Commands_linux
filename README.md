@@ -77,3 +77,7 @@ grep '^sudo:.*$' /etc/group | cut -d: -f4
   sudo reboot
   ```
 </details>
+> Show partition table
+```
+parted -l
+```
