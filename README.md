@@ -82,3 +82,6 @@ grep '^sudo:.*$' /etc/group | cut -d: -f4
 ```
 parted -l
 ```
+<details>
+  <summary>nmap section</summary>
+</details>
