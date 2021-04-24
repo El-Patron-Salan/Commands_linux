@@ -82,7 +82,7 @@ grep '^sudo:.*$' /etc/group | cut -d: -f4
 ```
 parted -l
 ```
-> Remove non empty directory
+> Remove non empty directory (v for view)
 ```
-rm -rf dir_name
+rm -vrf dir_name
 ```
