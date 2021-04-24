@@ -86,3 +86,8 @@ parted -l
 ```
 rm -vrf dir_name
 ```
+> Restore given directory in ~
+```
+vim ~/.config/user-dirs.dirs
+XDG_GIVEN DIRECTORY_DIR="$HOME/Given_directory"
+```
