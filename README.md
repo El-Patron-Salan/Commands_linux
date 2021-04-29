@@ -91,3 +91,7 @@ rm -vrf dir_name
 vim ~/.config/user-dirs.dirs
 XDG_GIVEN DIRECTORY_DIR="$HOME/Given_directory"
 ```
+> Change background
+```
+gsettings set org.gnome.desktop.background picture-uri file:////usr/share/backgrounds/[picture]
+```
