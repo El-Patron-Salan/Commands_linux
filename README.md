@@ -95,3 +95,11 @@ XDG_GIVEN DIRECTORY_DIR="$HOME/Given_directory"
 ```
 gsettings set org.gnome.desktop.background picture-uri file:////usr/share/backgrounds/[picture]
 ```
+> Open project in vs code from terminal
+```
+code -r <path-to-working-directory>
+```
+> Open project when already inside
+```
+code -n
+```
