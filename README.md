@@ -103,3 +103,8 @@ code -r <path-to-working-directory>
 ```
 code -n
 ```
+> Show list of packages to upgrade
+```
+apt list --upgradable
+```
+
