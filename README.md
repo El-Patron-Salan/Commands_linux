@@ -108,3 +108,12 @@ code -n
 apt list --upgradable
 ```
 
+> Docker run kali container with volumes and remove after exit
+```
+docker run -ti --rm --mount src=kali-root,dst=/root --mount src=kali-postgres,dst=/var/lib/postgresql image_name
+```
+
+> Copy file into Docker container
+```
+docker cp file.ext container_id:/destination_file.ext
+```
