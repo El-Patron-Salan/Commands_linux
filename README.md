@@ -117,3 +117,8 @@ docker run -ti --rm --mount src=kali-root,dst=/root --mount src=kali-postgres,ds
 ```
 docker cp file.ext container_id:/destination_file.ext
 ```
+
+> Load and list packages
+```
+pacman -Syup
+```
