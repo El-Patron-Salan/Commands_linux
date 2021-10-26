@@ -16,10 +16,21 @@ lsb_release -a
 ```
 echo "smth_to_translate" | tr '[A-Za-z]' '[N-ZA-Mn-za-m]'
 ```
-> Test C code with many warnings enabled
-```
-gcc -std=c17 -Wall -Wextra -Wwrite-strings -Wno-parentheses -Wpedantic -Warray-bounds  -Wstrict-prototypes -Wconversion
-```
+<details>
+  <summary>Compilers flags</summary>
+  
+  ### g++ accepts mostly the same options as gcc and vice versa
+  
+  > Test C code with many warnings enabled
+  ```
+  gcc -std=c17 -Wall -Wextra -Wwrite-strings -Wno-parentheses -Wpedantic -Warray-bounds  -Wstrict-prototypes -Wconversion
+  ```
+  > Test C++ code with g++
+  ```
+  g++ -pedantic -Wall -Wextra -Wcast-align -Wcast-qual -Wctor-dtor-privacy -Wdisabled-optimization -Wformat=2 -Winit-self -Wlogical-op -Wmissing-declarations       -Wmissing-include-dirs -Wnoexcept -Wold-style-cast -Woverloaded-virtual -Wredundant-decls -Wshadow -Wsign-conversion -Wsign-promo -Wstrict-null-sentinel           -Wstrict-overflow=5 -Wswitch-default -Wundef -Werror -Wno-unused
+  ```
+</details>
+
 > Show running process of files in range (TCP:1-1024)
 ```
 lsof -i TCP:1-1024
