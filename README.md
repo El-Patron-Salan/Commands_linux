@@ -123,6 +123,10 @@ apt list --upgradable
 ```
 docker run -ti --rm --mount src=kali-root,dst=/root --mount src=kali-postgres,dst=/var/lib/postgresql image_name
 ```
+> Get sha256 of docker image (here pihole) with manifest and piping
+```
+docker manifest inspect --verbose pihole/pihole | jq -r '.[].SchemaV2Manifest.config.digest' | head -n 1
+```
 
 > Copy file into Docker container
 ```
