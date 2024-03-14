@@ -137,3 +137,8 @@ docker cp file.ext container_id:/destination_file.ext
 ```
 pacman -Syup
 ```
+
+> Connect to RPI regardless of LAN addressing
+```
+ssh `whoami`@`arp -na | grep "e4:5f:01:12:ed:a9" | awk -F '[()]' '{print $2}'` -p 2137
+```
