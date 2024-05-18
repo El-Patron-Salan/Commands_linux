@@ -142,3 +142,8 @@ pacman -Syup
 ```
 ssh `whoami`@`arp -na | grep "e4:5f:01:12:ed:a9" | awk -F '[()]' '{print $2}'` -p 2137
 ```
+
+> Get public IP from CLI (via Cloudflare DNS)
+```
+dig +short txt ch whoami.cloudflare @1.0.0.1
+```
